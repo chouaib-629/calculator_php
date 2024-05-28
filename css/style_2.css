@@ -1,0 +1,203 @@
+/* Importing a font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Setting the font for the entire document */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #005f73, #94d2bd); /* Animated gradient background */
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Styling the background image */  
+.operator-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.operator-sign {
+    position: absolute;
+    font-size: 120px; /* Larger font size for operator signs */
+    color: rgba(255, 255, 255, 0.25); /* Semi-transparent white color for operator signs */
+    animation: float 10s infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Styling the h1 element */
+h1 {
+    font-size: 3rem;
+    color: #ffffff; /* White color for headings */
+    text-align: center;
+    margin-top: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Styling the form element */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for form */
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+/* Styling the input and select elements */
+input,
+select {
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #b0bec5; /* Light gray-blue border */
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #eceff1; /* Light gray background */
+    color: #37474f; /* Dark gray text */
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #94d2bd; /* Teal border on focus */
+    box-shadow: 0 0 8px rgba(148, 210, 189, 0.5);
+}
+
+/* Styling the button element */
+button {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    background-color: #94d2bd; /* Teal color for buttons */
+    color: #005f73; /* Dark teal text */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background-color: #e9ffec; /* Lighter teal on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
+
+button:hover:before {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+}
+
+/* Styling the result paragraph element */
+.print_result {
+    font-size: 1.5rem;
+    color: #005f73; /* Dark teal text */
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border: 1px solid #b0bec5; /* Light gray-blue border */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+/* Styling the error paragraph element */
+.calculate_error {
+    font-size: 1rem;
+    color: #ff6f61; /* Cool red color for errors */
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Additional styling elements */
+form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #ffffff, #94d2bd);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #94d2bd, #e9ffec);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* More complex styling elements */
+form::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #ffffff, #94d2bd);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #94d2bd, #e9ffec);
+    opacity: 0.5;
+    z-index: -1;
+}

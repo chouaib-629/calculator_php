@@ -1,12 +1,13 @@
 # Simple Calculator
 
-This is a simple calculator project built with PHP, HTML, and CSS. It allows users to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
+This is a simple calculator project built with PHP, HTML, CSS, and JavaScript. It allows users to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
 
 ## Features
 
 - User can input two numbers and select an operator.
 - The calculator performs the selected operation and displays the result.
 - Error handling for empty fields, non-numeric input, and division by zero.
+- Improved user interface and user experience with JavaScript enhancements.
 
 ## Getting Started
 
@@ -14,11 +15,11 @@ To get a local copy of this project, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/simple-calculator.git
+git clone https://github.com/chouaib-629/calculator_php.git
 ```
 2. Navigate to the project directory:
 ```bash
-cd simple-calculator
+cd calculator_php
 ```
 3. Open the `index.php` file in your preferred web browser.
 
@@ -37,8 +38,9 @@ To use the calculator, follow these steps:
 - `css/style_1.css`: The default stylesheet for the calculator.
 - `css/style_2.css`: An alternative stylesheet with a different visual design.
 - `css/style_3.css`: Another alternative stylesheet with a unique visual design.
+- `js/script.js`: The JavaScript file containing code for enhanced user interface and experience.
 
-## Switching between Styles
+## Switching between Style`
 
 To switch between the three available styles, simply update the `link` tag in the `index.php` file to point to the desired stylesheet. For example:
 

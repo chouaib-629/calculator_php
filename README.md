@@ -48,11 +48,11 @@ To switch between the three available styles, simply update the `link` tag in th
 ```php
 <link rel="stylesheet" href="css/style_1.css">
 ```
-- To use style_2.css, use:
+- To use `style_2.css`, use`
 ```php
 <link rel="stylesheet" href="css/style_2.css">
 ```
-- To use style_3.css, use:
+- To use `style_3.css`, use:
 ```php
 <link rel="stylesheet" href="css/style_3.css">
 ```

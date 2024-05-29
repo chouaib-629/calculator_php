@@ -76,10 +76,10 @@
         <!-- Select field for the operator -->
         <select name="operator">
             <!-- Options for the operator -->
-            <option value="+" <?php echo $operator == '+'? 'elected' : '';?>>Addition ( + )</option>
-            <option value="-" <?php echo $operator == '-'? 'elected' : '';?>>Soutraction ( - )</option>
-            <option value="*" <?php echo $operator == '*'? 'elected' : '';?>>Multiplication ( * )</option>
-            <option value="/" <?php echo $operator == '/'? 'elected' : '';?>>Division ( / )</option>
+            <option value="+" <?php echo $operator == '+'? 'selected' : '';?>>Addition ( + )</option>
+            <option value="-" <?php echo $operator == '-'? 'selected' : '';?>>Soutraction ( - )</option>
+            <option value="*" <?php echo $operator == '*'? 'selected' : '';?>>Multiplication ( * )</option>
+            <option value="/" <?php echo $operator == '/'? 'selected' : '';?>>Division ( / )</option>
         </select>
 
         <!-- Input field for the second number -->
